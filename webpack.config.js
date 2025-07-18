@@ -25,7 +25,7 @@ module.exports = (env, argv) => ({
   },
   plugins: [
     new HtmlWebpackPlugin({ template: './src/index.html' }),
-    new MiniCssExtract({ filename: argv.mode === 'production' ? 'styles.[contenthash].css' : '[name].css' }),
+    new MiniCssExtract({ filename: 'styles.[contenthash].css' }),
   ],
   optimization: argv.mode === 'production'
     ? { minimizer: ['...', new CssMinimizer()] }
