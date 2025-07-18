@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chatgptye.github.io/nasim/sitemap.xml
